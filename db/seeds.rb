@@ -28,3 +28,7 @@ recipes.each do |r|
     puts "Invalid category:  #{r['Category']} for recipe: #{r['Title']}"
   end
 end
+
+
+puts "Create #{Recipe.count} recipes"
+puts "Create #{Category.count} categories"
