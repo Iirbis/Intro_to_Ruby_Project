@@ -1,3 +1,8 @@
-<h1>Recipe -  <%= @recipe.title %></h1>
-<h3>Directions: <%= @recipe.directions %> </h3>
-
+<article class="message is-success">
+  <div class="message-header">
+    <p><%= @recipe.title %></p>
+  </div>
+  <div class="message-body">
+    <%= @recipe.directions %>
+  </div>
+</article>
