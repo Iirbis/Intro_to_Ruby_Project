@@ -1,6 +1,15 @@
 <h2 class="title is-2"><%=  @recipe.title %></h2>
-<article class="message is-success">
-  <div class="message-body">
-   <%= @recipe.directions %>
+
+
+<div class="columns">
+  <div class="column is-two-fifths"><figure class="image is-16by9">
+      <iframe class="has-ratio" width="640" height="360" src="https://source.unsplash.com/640x360/?food"></iframe>
+    </figure>
+  </div>
+  <div class="column"> <ul>
+    <article class="message is-success">
+      <div class="message-body">
+      <%= @recipe.directions %>
   </div>
 </article>
+</div>
