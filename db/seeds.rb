@@ -26,11 +26,23 @@ recipes.each do |r|
       title: r['Title'],
       directions: r['Directions']
     )
-  else
-    puts "Invalid category:  #{r['Category']} for recipe: #{r['Title']}"
+
+    if recipe&.valid?
+      ingredients = r["Ingredient"].split(",").map(&:strip)
+
+      ingredients.each do |ingredient_name|
+        ingredient = Ingredient.find_or_create_by(name: ingredient_name)
+
+        RecipeIngredient.create(recipe: recipe, ingredient: ingredient)
+      end
+    end
   end
 end
 
 
+
+
 puts "Create #{Recipe.count} recipes"
 puts "Create #{Category.count} categories"
+puts "Create #{Ingredient.count} ingredients"
+puts "Create #{RecipeIngredient.count} recipe ingredients"
