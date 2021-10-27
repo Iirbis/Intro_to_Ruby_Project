@@ -1,8 +1,9 @@
 <div class="tile is-ancestor">
   <div class="tile is-4 is-vertical is-parent">
     <div class="tile is-child box">
-      <p><h2 class="title is-2"><%=  @recipe.title %></h2></p>
+      <p class="title"><%=  @recipe.title %></p>
       <p><iframe class="has-ratio" width="280" height="150" src="https://source.unsplash.com/360x360/?food"></iframe></p>
+      <p><strong>Category: <%= @recipe.category.name %></strong></p>
     </div>
     <div class="tile is-child box">
       <p class="title">Ingredients</p>

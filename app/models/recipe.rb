@@ -9,7 +9,7 @@ class Recipe < ApplicationRecord
 
 
   def recipe_params
-    params.require(:recipe).permit(:title, :directions, :search)
+    params.require(:recipe).permit(:title, :directions, :category_id, :search)
   end
 
   def self.search(search)
