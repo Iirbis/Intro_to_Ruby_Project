@@ -6,4 +6,8 @@ class Recipe < ApplicationRecord
 
   validates :title, :directions, presence: true
   validates :title, uniqueness:true
+
+
+
+
 end
