@@ -58,3 +58,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'will_paginate', '~> 3.3.0'
 
 gem 'will_paginate-bulma'
+
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
