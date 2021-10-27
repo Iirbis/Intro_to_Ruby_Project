@@ -27,7 +27,7 @@ recipes.each do |r|
       directions: r['Directions']
     )
 
-    if recipe&.valid?
+    if recipe && recipe.valid?
       ingredients = r["Ingredient"].split(",").map(&:strip)
 
       ingredients.each do |ingredient_name|
