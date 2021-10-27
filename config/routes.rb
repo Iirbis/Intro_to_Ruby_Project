@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'recipe_ingredients/index'
-  get 'recipe_ingredients/show'
   root to: "home#index"
   resources :recipes, only: [:index, :show]
   resources :categories, only: [:index, :show]
