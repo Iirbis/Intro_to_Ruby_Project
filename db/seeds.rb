@@ -9,6 +9,8 @@
 require "csv"
 
 
+RecipeIngredient.delete_all
+Ingredient.delete_all
 Recipe.delete_all
 Category.delete_all
 
