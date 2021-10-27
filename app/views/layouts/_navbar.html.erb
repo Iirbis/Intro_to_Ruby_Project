@@ -1,4 +1,4 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-light" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item">
       <figure class="image is-512x512">
@@ -21,7 +21,7 @@
       </a>
 
       <a class="navbar-item">
-        Search:
+        🔎
         <%= form_tag(recipes_path, method: :get) do %>
         <%= text_field_tag(:search, params[:search]) %>
         <%= submit_tag ("Search") %>
