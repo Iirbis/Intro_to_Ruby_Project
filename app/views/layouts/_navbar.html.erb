@@ -20,6 +20,14 @@
         About Us
       </a>
 
+      <a class="navbar-item">
+        Search:
+        <%= form_tag(recipes_path, method: :get) do %>
+        <%= text_field_tag(:search, params[:search]) %>
+        <%= submit_tag ("Search") %>
+        <%end%>
+      </a>
+
     </div>
   </div>
 </nav>

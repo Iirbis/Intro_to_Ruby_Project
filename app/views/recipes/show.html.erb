@@ -2,6 +2,7 @@
   <div class="tile is-4 is-vertical is-parent">
     <div class="tile is-child box">
       <p><h2 class="title is-2"><%=  @recipe.title %></h2></p>
+      <p><iframe class="has-ratio" width="280" height="150" src="https://source.unsplash.com/360x360/?food"></iframe></p>
     </div>
     <div class="tile is-child box">
       <p class="title">Ingredients</p>
@@ -14,7 +15,6 @@
     <div class="tile is-child box">
       <p class="title">Directions</p>
       <p><%= @recipe.directions %></p>
-      <p><iframe class="has-ratio" width="280" height="150" src="https://source.unsplash.com/360x360/?food"></iframe></p>
     </div>
   </div>
 </div>
