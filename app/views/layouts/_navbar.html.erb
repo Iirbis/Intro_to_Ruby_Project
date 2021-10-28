@@ -2,32 +2,32 @@
   <div class="navbar-brand">
     <a class="navbar-item">
       <figure class="image is-512x512">
-        <img src="https://cdn-icons-png.flaticon.com/512/3448/3448167.png">
+        <img src="https://cdn-icons-png.flaticon.com/512/3448/3448167.png" alt = "img">
       </figure>
     </a>
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
+      <a class="navbar-item"></a>
+
        <p><%= link_to "Home", root_path %></p>
-      </a>
 
-      <a class="navbar-item">
+      <a class="navbar-item"></a>
         <p><%= link_to "Directory", recipes_path %></p>
-      </a>
 
-      <a class="navbar-item">
+
+      <a class="navbar-item"></a>
         <p><%= link_to "About", about_path %></p>
-      </a>
 
-      <a class="navbar-item">
+
+      <a class="navbar-item"></a>
         🔎
         <%= form_tag(recipes_path, method: :get) do %>
         <%= text_field_tag(:search, params[:search]) %>
         <%= submit_tag ("Search") %>
         <%end%>
-      </a>
 
+    </div>
     </div>
   </div>
 </nav>
